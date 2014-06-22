@@ -8,19 +8,19 @@ QinJs
 	$('div')
 
 ###绑定器
-	'''javascript
+	
 	$('div').on('click',function(){
 	
 	})
-	'''
+	
 
 ###css渲染
-	'''javascript
+	
 	$('div').css('display','none')
-	'''
+	
 
 ###支持线性调用
-	'''javascript
+	
 	$('div').css('display','none').css('display','block')
-	'''
+	
 

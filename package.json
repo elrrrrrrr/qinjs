@@ -1,0 +1,29 @@
+{
+  "name": "qinjs",
+  "version": "0.0.0",
+  "description": "Jquery Free , escape Zepto . ",
+  "main": "qin.js jquery free",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elrrrrrrr/qinjs.git"
+  },
+  "keywords": [
+    "jquery",
+    "free",
+    "zepto",
+    "selector"
+  ],
+  "author": "Elr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elrrrrrrr/qinjs/issues"
+  },
+  "homepage": "https://github.com/elrrrrrrr/qinjs",
+  "devDependencies": {
+    "gulp": "*",
+    "jest-cli": "^0.1.15"
+  }
+}
