@@ -1,5 +1,6 @@
 QinJs
 =====
+[![Build Status](https://travis-ci.org/elrrrrrrr/qinjs.svg?branch=master)](https://travis-ci.org/elrrrrrrr/qinjs)
 这是什么
 ----------
 这是一个非常轻量级的js库、目的是实现手机端(webkit)的jquery free 。

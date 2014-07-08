@@ -1,6 +1,6 @@
 {
   "name": "qinjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Jquery Free , escape Zepto . ",
   "main": "qin.js jquery free",
   "scripts": {
