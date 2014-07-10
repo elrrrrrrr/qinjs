@@ -7,6 +7,6 @@ var assert = require('assert');
 
 describe("description", function(){
   it("should do blah blah blah", function(){
-    // your code...
+    assert.equal(1, 1)
   });
 });
