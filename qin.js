@@ -3,7 +3,6 @@
  * 需要浏览器支持HTML node对象及querySelect方法
  * @param  {[document]} document [document对象]
  * @param  {[window]} window   [window对象]
- * @param  {[qinjs]} $        [浏览器实例,干掉comand tool]
  */
 $ = (function (document, window, $) {
   
