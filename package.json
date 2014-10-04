@@ -4,7 +4,7 @@
   "description": "Jquery Free , escape Zepto . ",
   "main": "qin.js jquery free",
   "scripts": {
-    "test": "karma start"
+    "test": "./node_modules/karma/bin/karma start"
   },
   "repository": {
     "type": "git",
