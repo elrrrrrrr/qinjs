@@ -1,21 +1,28 @@
 // Karma configuration
-// Generated on Sat Oct 04 2014 22:26:36 GMT+0800 (CST)
+// Generated on Sat Oct 04 2014 23:45:57 GMT+0800 (CST)
 
 module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '.',
 
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'chai'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'test/test.js'
+      './test.html',
+      'vendor/*',
+      'test/test.js',
+      'qin.js',
+      {pattern: '*.html', included: false, served: true},
+      {pattern: 'vendor/*', included: false, served: true},
+      {pattern: 'qin.js', included: true, served: true}
+
     ],
 
 
@@ -55,7 +62,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Safari', 'Firefox'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode

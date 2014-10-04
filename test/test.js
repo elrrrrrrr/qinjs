@@ -1,16 +1,17 @@
-'use strict';
+var assert = chai.assert;
 
-//var qinjs = require('../qin');
+describe('load test', function() {
 
-// To know the usage of `assert`, see: http://nodejs.org/api/assert.html
-var assert = require("assert")
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when the value is not present', function(){
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
-    })
-  })
+	it('should has on function', function() {
+		assert.equal(true, 'on' in $);
+	})
+
+	it('should has trigger function', function() {
+		assert.equal(true, 'trigger' in $);
+	})
+
+	it('should has css function', function() {
+		assert.equal(true, 'css' in $('div'));
+	})	
+
 })
-
-
