@@ -16,11 +16,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './test.html',
-      'vendor/*',
       'test/test.js',
       'qin.js',
       {pattern: '*.html', included: false, served: true},
-      {pattern: 'vendor/*', included: false, served: true},
       {pattern: 'qin.js', included: true, served: true}
 
     ],
