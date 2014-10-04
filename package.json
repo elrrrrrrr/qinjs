@@ -4,7 +4,7 @@
   "description": "Jquery Free , escape Zepto . ",
   "main": "qin.js jquery free",
   "scripts": {
-    "test": "jest"
+    "test": "mocha -R spec"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,11 @@
   "homepage": "https://github.com/elrrrrrrr/qinjs",
   "devDependencies": {
     "gulp": "*",
-    "jest-cli": "^0.1.15"
+    "karma": "^0.12.24",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.9",
+    "karma-safari-launcher": "^0.1.1",
+    "mocha": "^1.21.4"
   }
 }
