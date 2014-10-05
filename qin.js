@@ -6,6 +6,7 @@
 ;
 (function(document, window) {
 
+  
   var node = Node.prototype,
     trigger = 'trigger',
     // 兼容firefox, firefox下创建元素需要一个字符串作为参数
@@ -17,6 +18,7 @@
     this.addEventListener(event, fn, false);
     return this;
   };
+
   //nodeList遍历添加
   NodeList.prototype.on = function(event, fn) {
     this[forEach](function(el) {
@@ -72,9 +74,13 @@
     //单个元素直接返回,多个元素返回nodeList
     return length == 1 ? r[0] : r;
   };
+
+  //console.log(Node.prototype.trigger)
+
   //获取node.on(),重新指定作用域,完成自定义事件支持  
-  entry.on = Node.prototype.on.bind(dummy);
-  entry[trigger] = Node.prototype[trigger].bind(dummy);
+  entry.on = Node.prototype.on;
+
+  entry[trigger] = Node.prototype[trigger];
 
   //模块化
   if (typeof exports !== 'undefined' && module.exports) {
