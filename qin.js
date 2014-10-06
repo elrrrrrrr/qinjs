@@ -75,8 +75,6 @@
     return length == 1 ? r[0] : r;
   };
 
-  //console.log(Node.prototype.trigger)
-
   //获取node.on(),重新指定作用域,完成自定义事件支持  
   entry.on = Node.prototype.on;
 
