@@ -4,7 +4,7 @@
   "description": "Jquery Free , escape Zepto . ",
   "main": "qin.js jquery free",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+    "test": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./vendor/index.html"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "gulp": "*",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "mocha-phantomjs": "^3.5.0",
+    "phantomjs": "^1.9.10"
   }
 }

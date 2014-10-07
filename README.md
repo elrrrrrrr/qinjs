@@ -12,23 +12,23 @@ QinJs
 考虑到需求复杂化，所有的API都可以无缝衔接到Zepto/Jquery
 
 ###选择器
-	$('div')
-
+```js
+$('div')
+```
 ###绑定器
-	
-	$('div').on('click',function(){
+```js
+$('div').on('click',function(){
 		//do something
 	})
-	
-
+```
 ###css渲染
-	
-	$('div').css('display','none')
-	
-
+```js
+$('div').css('display','none')
+```
 ###支持线性调用
-	
-	$('div').css('display','none')
-					.css('display','block')
+```js
+$('div').css('display','none')
+		.css('display','block')
+```
 	
 
