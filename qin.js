@@ -6,7 +6,6 @@
 ;
 (function(document, window) {
 
-  
   var node = Node.prototype,
     trigger = 'trigger',
     // 兼容firefox, firefox下创建元素需要一个字符串作为参数

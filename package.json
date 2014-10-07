@@ -25,6 +25,7 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "gulp": "*",
+    "gulp-uglify": "^1.0.1",
     "mocha": "^1.21.4",
     "mocha-phantomjs": "^3.5.0",
     "phantomjs": "^1.9.10"
