@@ -20,7 +20,7 @@
 
   //nodeList遍历添加
   NodeList.prototype.on = function(event, fn) {
-    this[forEach](function(el) {
+    this.forEach(function(el) {
       el.on(event, fn);
     });
     return this;
@@ -59,7 +59,7 @@
   };
   //遍历调用
   NodeList.prototype[trigger] = function(event) {
-    this[forEach](function(el) {
+    this.forEach(function(el) {
       el[trigger](event);
     });
     return this;
@@ -87,7 +87,7 @@
       module.exports = exports = entry;
     })
   } else if (typeof define === 'function' && define.amd) {
-    define('wechat', [], entry);
+    define('$', [], entry);
   } else {
     //浏览器端直接运行
     window.$ = entry;
