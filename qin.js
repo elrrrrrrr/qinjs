@@ -87,7 +87,9 @@
       module.exports = exports = entry;
     })
   } else if (typeof define === 'function' && define.amd) {
-    define('$', [], entry);
+    define('qin', [], function() {
+      return entry
+    });
   } else {
     //浏览器端直接运行
     window.$ = entry;
